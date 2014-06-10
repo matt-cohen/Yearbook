@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,900italic' rel='stylesheet' type='text/css'>
+    <style type="text/css" >
+
+    	body {
+    		background-color: black;
+    	}
+        .container {
+			width: 756px;
+			margin: 0 auto;
+			border: 1px solid black;
+			height: 1008px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap :wrap;
+		}
+
+		.pic {
+			padding: 1px white;
+			width: 250px;
+			height: 250px;
+			float: left;
+			position: relative;
+
+		}
+
+		.pic:hover .picture{
+				-webkit-transform: rotateZ(-15deg) translateX(-85%) translateY(10%);
+				-moz-transform: rotateZ(-15deg) translateX(-85%) translateY(10%);
+				-ms-transform: rotateZ(-15deg) translateX(-85%) translateY(10%);
+				transform: rotateZ(-15deg) translateX(-85%) translateY(10%);
+				-moz-box-shadow:    3px 3px 5px 6px #ccc;
+	  			-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+	  			box-shadow:         3px 3px 5px 6px #ccc;
+	  			z-index: 1
+			}
+
+		.pic:hover .description {
+				-webkit-transform: rotateZ(5deg) scaleX(1.1) translateX(20%) translateY(10%);
+				-moz-transform: rotateZ(5deg) scaleX(1.1) translateX(20%) translateY(10%);
+				-ms-transform: rotateZ(5deg) scaleX(1.1) translateX(20%) translateY(10%);
+				transform: rotateZ(5deg) scaleX(1.1) translateX(20%) translateY(10%);
+		}
+
+		.pic:hover ~ .pic {
+				z-index: -1;
+		}
+
+		.picture {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-size: 100% 100%;
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+			-webkit-transition: 1s ease-in-out;
+			-moz-transition: 1s ease-in-out;
+			-ms-transition: 1s ease-in-out;
+			transition: 1s ease-in-out;
+		}
+
+		.description {
+			padding: 5px;
+			font-family: 'Lato', sans-serif;
+			color: white;
+			-webkit-transition: 1s ease-in-out;
+			-moz-transition: 1s ease-in-out;
+			-ms-transition: 1s ease-in-out;
+			transition: 1s ease-in-out;
+		}
+
+		h1 {
+			text-align: center;
+			font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			font-style: italic;
+			color: white;
+		}
+
+
+
+    </style>
+</head>
+
+<body>
+<h1> Matt's Yearbook </h1>
+
+<div class="container">
+
+<div class="pic">
+<div class="description">
+<h1>January</h1>
+Went skiing with Saif and Brian up at Butternut.
+</div>
+<div class="picture" style="background-image: url('images/jan.jpg');">
+</div>
+</div>
+
+<div class="pic">
+<div class="description">
+<h1>February</h1>
+Went to the Inauguration.
+</div>
+<div class="picture" style="background-image: url('images/feb.jpg');">
+</div>
+</div>
+
+<div class="pic">
+<div class="description">
+<h1>March</h1>
+Flew to the South Pacific to scuba dive at Truk Lagoon and in Palau.
+</div>
+<div class="picture" style="background-image: url('images/mar.jpg');">
+</div>
+</div>
+
+<div class="pic">
+<div class="description">
+<h1>April</h1>
+Visited Bryant Park in NYC with friends.
+</div>
+<div class="picture" style="background-image: url('images/apr.jpg');">
+</div>
+</div>
+
+<div class="pic">
+<div class="description">
+<h1>May</h1>
+Went to Paris with Katelyn.
+</div>
+<div class="picture" style="background-image: url('images/may.jpg');">
+</div>
+</div>
+
+<div class="pic">
+<div class="description">
+<h1>June</h1>
+Went to a random beach in West Haven for the day.
+</div>
+<div class="picture" style="background-image: url('images/jun.jpg');">
+</div>
+</div>
+
+<div class="pic">
+<div class="description">
+<h1>July</h1>
+Explored a vineyard in the hills above Trento.
+</div>
+<div class="picture" style="background-image: url('images/jul.jpg');">
+</div>
+</div>
+
+<div class="pic">
+<div class="description">
+<h1>August</h1>
+Ran around Florence for a weekend.
+</div>
+<div class="picture" style="background-image: url('images/aug.jpg');">
+</div>
+</div>
+
+<div class="pic">
+<div class="description">
+<h1>September</h1>
+Hung out with James at Trumbull Fall Festival.
+</div>
+<div class="picture" style="background-image: url('images/sep.jpg');">
+</div>
+</div>
+
+<div class="pic">
+<div class="description">
+<h1>October</h1>
+Dressed up as a stick figure for Halloween.
+</div>
+<div class="picture" style="background-image: url('images/oct.jpg');">
+</div>
+</div>
+
+<div class="pic">
+<div class="description">
+<h1>November</h1>
+Played a bunch of football with my family on Thanksgiving.
+</div>
+<div class="picture" style="background-image: url('images/nov.jpg');">
+</div>
+</div>
+
+<div class="pic">
+<div class="description">
+<h1>December</h1>
+Visited Burma with the whole family.
+</div>
+<div class="picture" style="background-image: url('images/dec.jpg');">
+</div>
+</div>
+
+</div>
+
+</body>
+
+</html>
